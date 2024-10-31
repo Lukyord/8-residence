@@ -1,0 +1,101 @@
+@font-face {
+    font-family: "Domaine Sans";
+    src: url("../../font/Domaine Sans/DomaineSansText-Light.eot");
+    src: url("../../font/Domaine Sans/DomaineSansText-Light.eot?#iefix")
+            format("embedded-opentype"),
+        url("../../font/Domaine Sans/DomaineSansText-Light.woff2")
+            format("woff2"),
+        url("../../font/Domaine Sans/DomaineSansText-Light.woff") format("woff"),
+        url("../../font/Domaine Sans/DomaineSansText-Light.ttf")
+            format("truetype"),
+        url("../../font/Domaine Sans/DomaineSansText-Light.svg#DomaineSansText-Light")
+            format("svg");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Domaine Sans";
+    src: url("../../font/Domaine Sans/DomaineSansText-MediumItalic.eot");
+    src: url("../../font/Domaine Sans/DomaineSansText-MediumItalic.eot?#iefix")
+            format("embedded-opentype"),
+        url("../../font/Domaine Sans/DomaineSansText-MediumItalic.woff2")
+            format("woff2"),
+        url("../../font/Domaine Sans/DomaineSansText-MediumItalic.woff")
+            format("woff"),
+        url("../../font/Domaine Sans/DomaineSansText-MediumItalic.ttf")
+            format("truetype"),
+        url("../../font/Domaine Sans/DomaineSansText-MediumItalic.svg#DomaineSansText-MediumItalic")
+            format("svg");
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Domaine Sans";
+    src: url("../../font/Domaine Sans/DomaineSansText-LightItalic.eot");
+    src: url("../../font/Domaine Sans/DomaineSansText-LightItalic.eot?#iefix")
+            format("embedded-opentype"),
+        url("../../font/Domaine Sans/DomaineSansText-LightItalic.woff2")
+            format("woff2"),
+        url("../../font/Domaine Sans/DomaineSansText-LightItalic.woff")
+            format("woff"),
+        url("../../font/Domaine Sans/DomaineSansText-LightItalic.ttf")
+            format("truetype"),
+        url("../../font/Domaine Sans/DomaineSansText-LightItalic.svg#DomaineSansText-LightItalic")
+            format("svg");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Nanum Myeongjo";
+    src: url("../../font/Nanum Myeongjo/NanumMyeongjo.eot");
+    src: url("../../font/Nanum Myeongjo/NanumMyeongjo.eot?#iefix")
+            format("embedded-opentype"),
+        url("../../font/Nanum Myeongjo/NanumMyeongjo.woff2") format("woff2"),
+        url("../../font/Nanum Myeongjo/NanumMyeongjo.woff") format("woff"),
+        url("../../font/Nanum Myeongjo/NanumMyeongjo.ttf") format("truetype"),
+        url("../../font/Nanum Myeongjo/NanumMyeongjo.svg#NanumMyeongjo")
+            format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Nanum Myeongjo";
+    src: url("../../font/Nanum Myeongjo/NanumMyeongjoBold.eot");
+    src: url("../../font/Nanum Myeongjo/NanumMyeongjoBold.eot?#iefix")
+            format("embedded-opentype"),
+        url("../../font/Nanum Myeongjo/NanumMyeongjoBold.woff2") format("woff2"),
+        url("../../font/Nanum Myeongjo/NanumMyeongjoBold.woff") format("woff"),
+        url("../../font/Nanum Myeongjo/NanumMyeongjoBold.ttf")
+            format("truetype"),
+        url("../../font/Nanum Myeongjo/NanumMyeongjoBold.svg#NanumMyeongjoBold")
+            format("svg");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Nanum Myeongjo";
+    src: url("../../font/Nanum Myeongjo/NanumMyeongjoExtraBold.eot");
+    src: url("../../font/Nanum Myeongjo/NanumMyeongjoExtraBold.eot?#iefix")
+            format("embedded-opentype"),
+        url("../../font/Nanum Myeongjo/NanumMyeongjoExtraBold.woff2")
+            format("woff2"),
+        url("../../font/Nanum Myeongjo/NanumMyeongjoExtraBold.woff")
+            format("woff"),
+        url("../../font/Nanum Myeongjo/NanumMyeongjoExtraBold.ttf")
+            format("truetype"),
+        url("../../font/Nanum Myeongjo/NanumMyeongjoExtraBold.svg#NanumMyeongjoExtraBold")
+            format("svg");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}

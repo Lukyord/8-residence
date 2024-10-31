@@ -1,0 +1,103 @@
+/* HEADER ====================*/
+#header {
+    position: absolute;
+    top: var(--index-marquee-height);
+    left: 0;
+    width: 100vw;
+    z-index: 100;
+    transition: none;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-24) var(--spacing-30);
+    transition: var(--duration) var(--timing-function);
+    position: relative;
+}
+
+.header-nav:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-white);
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(-150%);
+    transition: transform var(--duration) var(--timing-function);
+    will-change: transform;
+}
+
+.header-nav > * {
+    margin-top: calc(-1 * var(--spacing-60));
+}
+
+.header-nav .header-logo {
+    height: var(--150px);
+    transition: var(--duration) var(--timing-function);
+    margin-top: 0;
+}
+
+.header-nav .header-logo svg {
+    height: 100%;
+    width: auto;
+}
+
+.header-nav .header-logo path.main-color {
+    fill: var(--color-white);
+}
+
+.header-nav .header-logo img {
+    height: 100%;
+    width: auto;
+}
+
+.header-nav .header-call {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-8);
+    justify-content: flex-end;
+}
+
+html.page-scrolling.scrolled-past-marquee #header {
+    position: fixed;
+    top: 0;
+}
+
+html.page-scrolling.scrolled-past-marquee .header-nav {
+    padding: var(--spacing-10) var(--spacing-30);
+}
+
+html.page-scrolling.scrolled-past-marquee .header-nav::before {
+    transform: translateY(0%);
+}
+
+html.page-scrolling.scrolled-past-marquee .header-nav > * {
+    margin-top: 0;
+}
+
+html.page-scrolling.scrolled-past-marquee .header-nav .header-logo {
+    height: var(--64px);
+}
+
+html.page-scrolling.scrolled-past-marquee
+    .header-nav
+    .header-logo
+    path.main-color {
+    fill: var(--color-gold);
+}
+
+html.page-scrolling.scrolled-past-marquee .header-nav .header-call .ic {
+    color: var(--color-black) !important;
+}
+
+@media (max-width: 991px) {
+    .header-nav *:is(.header-call, .header-register) {
+        flex-basis: var(--100px);
+    }
+}

@@ -206,8 +206,8 @@
         <div class="wrapper">
             <div class="map">
                 <div class="media-container blurred-media">
-                    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11200.675829730526!2d-75.6876061!3d45.42609535!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce04ff4fe494ef%3A0x26bb54f60c29f6e!2sParliament+Hill!5e0!3m2!1sen!2sca!4v1528808935681" title="mock iframe"></iframe> -->
-                    <img src="./assets/img/design/map.jpg" alt="Map" loading="lazy" draggable="false">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11200.675829730526!2d-75.6876061!3d45.42609535!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce04ff4fe494ef%3A0x26bb54f60c29f6e!2sParliament+Hill!5e0!3m2!1sen!2sca!4v1528808935681" title="mock iframe"></iframe>
+                    <!-- <img src="./assets/img/design/map.jpg" alt="Map" loading="lazy" draggable="false"> -->
                     <img src="./assets/img/design/pin.png" alt="Pin" class="pin" style="top: 50%; left: 50%" loading="lazy" draggable="false">
                 </div>
                 <div class="right-border animation-border show-md"></div>
@@ -224,8 +224,29 @@
                         <a href="tel:+66910678949">TEL. 091-067-8949</a>
                     </address>
                     <div class="buttons">
-                        <a href="#google-map" class="button light-bg">GOOGLE MAP</a>
-                        <a href="#graphic-map" class="button light-bg">GRAPHIC MAP</a>
+                        <div class="google-map">
+                            <a href="#google-map" class="button light-bg">GOOGLE MAP</a>
+                        </div>
+                        <div class="graphic-map">
+                            <a href="#graphic-map" class="button light-bg open-popup-modal">GRAPHIC MAP</a>
+                            <div id="graphic-map" class="graphic-map-popup mfp-hide">
+                                <?php
+                                $cover = './assets/img/design/graphic-map.png';
+                                $cover_m = './assets/img/design/graphic-map-m.png';
+                                ?>
+                                <div class="image">
+                                    <picture class="object">
+                                        <source media="(min-width:992px)" srcset="<?php echo $cover ?>">
+                                        <source media="(min-width:0px)" srcset="<?php echo $cover_m ?>">
+                                        <img
+                                            src="<?php echo $cover; ?>"
+                                            alt="Graphic Map"
+                                            draggable="false">
+
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
                 </div>

@@ -1245,23 +1245,23 @@ jQuery(function ($) {
     }
 
     //POPUP
-    // $(".open-popup-modal").magnificPopup({
-    //   type: "inline",
-    //   preloader: false,
-    //   closeOnBgClick: true,
-    //   mainClass: "popup-style popup-style-modal",
-    //   showCloseBtn: true,
-    //   closeBtnInside: true,
-    //   removalDelay: 300,
-    //   callbacks: {
-    //     open: function () {
-    //       $("html").addClass("plugin-mfp-enabled");
-    //     },
-    //     close: function () {
-    //       $("html").removeClass("plugin-mfp-enabled");
-    //     },
-    //   },
-    // });
+    $(".open-popup-modal").magnificPopup({
+        type: "inline",
+        preloader: false,
+        closeOnBgClick: true,
+        mainClass: "popup-style popup-style-modal",
+        showCloseBtn: true,
+        closeBtnInside: true,
+        removalDelay: 300,
+        callbacks: {
+            open: function () {
+                $("html").addClass("plugin-mfp-enabled");
+            },
+            close: function () {
+                $("html").removeClass("plugin-mfp-enabled");
+            },
+        },
+    });
 });
 
 /* VIDEO */

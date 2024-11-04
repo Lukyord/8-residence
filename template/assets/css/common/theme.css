@@ -2487,7 +2487,7 @@ button.mfp-close:before,
 .modal-dismiss:before {
     font-family: "iconfont";
     content: "\e900";
-    font-size: var(--font-size-30);
+    font-size: var(--icon-size-20);
     line-height: 1;
     color: inherit;
     display: block;

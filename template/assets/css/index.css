@@ -536,3 +536,34 @@ input[type="checkbox"]:checked::before {
         padding: 0;
     }
 }
+
+/* INDEX GRAPHIC-MAP POPUP */
+.graphic-map-popup {
+    width: calc(100vw - (var(--spacing-30) * 2));
+    padding: var(--spacing-16) 0;
+    max-height: 100vh;
+}
+
+.graphic-map-popup .image {
+    height: 100%;
+}
+
+.graphic-map-popup .image *:is(img, picture) {
+    width: auto;
+    height: 100%;
+    max-height: calc(100vh - (var(--spacing-16) * 2));
+}
+
+.mfp-bg {
+    background-color: var(--color-white);
+}
+
+.mfp-bg.mfp-ready {
+    opacity: 1;
+}
+
+@media (max-width: 991px) {
+    .graphic-map-popup {
+        width: calc(100vw - (var(--spacing-16) * 2));
+    }
+}

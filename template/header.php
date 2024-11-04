@@ -33,6 +33,7 @@ $page_index = ($page == basename(dirname($_SERVER['PHP_SELF']), "/") || $page ==
     <link rel="stylesheet" href="<?php echo $root; ?>assets/plugin/magnific-popup/magnific-popup.min.css">
     <link rel="stylesheet" href="<?php echo $root; ?>assets/plugin/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="<?php echo $root; ?>assets/plugin/liMarquee/liMarquee.css">
+
     <!-- CSS:CONFIG -->
     <link rel="stylesheet" href="<?php echo $root; ?>assets/css/common/font.css">
     <link rel="stylesheet" href="<?php echo $root; ?>assets/css/common/iconfont.css">

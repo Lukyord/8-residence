@@ -50,7 +50,6 @@ jQuery(function ($) {
                         blurredImageDiv.find(".inside-animation");
 
                     if (insideAnimation.length) {
-                        console.log("object loaded");
                         const animation = insideAnimation.data("animation");
                         insideAnimation.addClass("animate").addClass(animation);
                         $("html").scrollTop($("html").scrollTop() + 1);

@@ -9,31 +9,17 @@ jQuery(function ($) {
 
 // INDEX MARQUEE
 jQuery(function ($) {
-    $("#index-marquee .index-marquee").each(function () {
+    $("#index-marquee").each(function () {
         var _this = $(this);
-        var indexMarqueeWrapper = _this.closest(".index-marquee-wrapper");
+        var indexMarqueeWrapper = _this.find(".index-marquee-wrapper");
 
-        function initializeMarquee() {
-            if ($(window).width() > 992) {
-                if (!indexMarqueeWrapper.hasClass("initialized")) {
-                    indexMarqueeWrapper.liMarquee({
-                        circular: true,
-                        startShow: true,
-                        scrollDelay: 150,
-                        scrollStop: false,
-                        drag: false,
-                    });
-                    indexMarqueeWrapper.addClass("initialized");
-                }
-            } else {
-                if (indexMarqueeWrapper.hasClass("initialized")) {
-                    indexMarqueeWrapper.liMarquee("destroy");
-                    indexMarqueeWrapper.removeClass("initialized");
-                }
-            }
-        }
-
-        onWindowResize(initializeMarquee, 300, true);
+        indexMarqueeWrapper.liMarquee({
+            circular: true,
+            startShow: true,
+            scrollDelay: 150,
+            scrollStop: false,
+            drag: false,
+        });
     });
 });
 
